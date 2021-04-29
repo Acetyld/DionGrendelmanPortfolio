@@ -120,3 +120,27 @@
     flex-direction: column;
   }
 }
+
+.hero{
+  padding-top:100px;
+  padding-bottom:100px;
+  background: rgb(30,6,80);
+  background: linear-gradient(143deg, rgba(30,6,80,1) 0%, rgba(31,6,84,1) 35%, rgba(50,5,142,1) 100%);
+}
+.aboutus{
+  padding-top:100px;
+  padding-bottom:100px;
+  background: rgb(30,6,80);
+  background: linear-gradient(121deg, rgba(30,6,80,1) 0%, rgba(31,6,84,1) 35%, rgba(50,5,142,1) 100%);
+}
+.projects{
+  padding-top:100px;
+  padding-bottom:100px;
+  background: rgb(30,6,80);
+  background: linear-gradient(121deg, rgba(30,6,80,1) 0%, rgba(31,6,84,1) 35%, rgba(50,5,142,1) 100%);
+}
+.project{
+  background:rgba(22, 3, 62,0.4);
+  border:2px solid rgba(94, 53, 177,0.5);
+  border-radius:11px;
+}
