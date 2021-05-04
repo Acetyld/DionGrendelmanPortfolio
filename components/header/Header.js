@@ -8,10 +8,6 @@ const Header = (titleName) => {
 
     return (
         <>
-            <Head>
-                <title>test</title>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
             <nav className={`${styles.header} navbar py-4 navbar-expand-lg navbar-dark sticky-top`}>
                 <div className="container justify-content-center">
                     <button onClick={() => setMobile(!toggleMobile)} className="navbar-toggler" type="button"
@@ -33,10 +29,10 @@ const Header = (titleName) => {
                             </li>
                         </ul>
                         <div className="navbar-text text-center text-lg-start">
-                            <a href=''>
+                            <a target={`_blank`} href='https://github.com/DionGrendelman'>
                                 <i className="bi bi-github me-2"></i>
                             </a>
-                        <a href=''>
+                        <a target={`_blank`} href='https://www.linkedin.com/in/dion-grendelman-21940489/?originalSubdomain=nl'>
                                 <i className="bi bi-linkedin"></i>
                         </a>
                         </div>

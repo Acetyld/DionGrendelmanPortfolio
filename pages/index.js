@@ -4,11 +4,43 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "../components/header/Header";
 import React from "react";
+import {NextSeo} from 'next-seo';
 
 export default function Home() {
     return (
         <>
-            <Header titleName={'Create Next App1'}/>
+            <NextSeo
+                title="Dion Grendelman - React / React-native Developer"
+                description="My name is Dion Grendelman. I am a React / React Native developer in the netherlands. The past 3 years i've worked with react to build the backend CMS for multiple
+                                        SAAS apps. I've worked with Typescript, NextJS, Redux, Electron and many other libraries."
+                canonical="https://www.diongrendelman.nl/"
+                openGraph={{
+                    url: 'https://www.diongrendelman.nl/',
+                    title: 'Dion Grendelman - React / React-native Developer',
+                    description: 'My name is Dion Grendelman. I am a React / React Native developer in the netherlands. The past 3 years i\'ve worked with react to build the backend CMS for multiple\n' +
+                        '                                        SAAS apps. I\'ve worked with Typescript, NextJS, Redux, Electron and many other libraries.',
+                    images: [
+                        {url: 'https://www.diongrendelman.nl/images/BannerImage.svg', alt: 'Dion Grendelman Banner'},
+                    ],
+                    site_name: 'Dion Grendelman',
+                }}
+                twitter={{
+                    handle: '@acetyldrl',
+                    site: '@acetyldrl',
+                    cardType: 'summary_large_image',
+                }}
+                additionalMetaTags={[{
+                    name: 'viewport',
+                    content: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+                }]}
+                additionalLinkTags={[
+                    {
+                        rel: 'icon',
+                        href: '/favicon.ico',
+                    },
+                ]}
+            />
+            <Header/>
             <div className={`${styles.hero}`}>
                 <div className={`container text-white`}>
                     <div className={'row'}>
@@ -42,7 +74,8 @@ export default function Home() {
                                     <h4>React</h4>
                                     <div className={'fw-lighter'}>
                                         The past 3 years i've worked with react to build the backend CMS for multiple
-                                        SAAS apps. I've worked with Typescript, NextJS, Redux, Electron and many other libraries.
+                                        SAAS apps. I've worked with Typescript, NextJS, Redux, Electron and many other
+                                        libraries.
                                     </div>
                                 </div>
                                 <div className={`bg-secondary mb-2 p-4`}>
@@ -53,9 +86,12 @@ export default function Home() {
                                         community.
                                     </div>
                                 </div>
-                                <div className={`mb-2 p-4`} style={{backgroundColor:'rgba(50, 5, 142,0.3)'}}>
+                                <div className={`mb-2 p-4`} style={{backgroundColor: 'rgba(50, 5, 142,0.3)'}}>
                                     <h4>Many more...</h4>
-                                    <div className={'fw-lighter'}>My experience goes pretty wide. For example wordpress development, UX Design, VueJS, Symfony, Bootstrap, Electron, Java but my main focus is on React/React Native</div>
+                                    <div className={'fw-lighter'}>My experience goes pretty wide. For example wordpress
+                                        development, UX Design, VueJS, Symfony, Bootstrap, Electron, Java but my main
+                                        focus is on React/React Native
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -67,9 +103,14 @@ export default function Home() {
                                         I'm Dion Grendelman!
                                     </h2>
                                     <p className={'fw-lighter'}>
-                                        The last years i've been builing up my coding experience. I started as a wordpress developer (custom plugins/themes) and the last 2/3 years my focus has gone to "react".
-                                        My passion is in the front-end development. From a simple website to a full webapp or mobile app. Besides being a developer i also own a medium-large IT Company.
-                                        My best skill would be communication. Contact with customers is one of my favorite things to do.
+                                        The last years i've been builing up my coding experience. I started as a
+                                        wordpress developer (custom plugins/themes) and the last 2/3 years my focus has
+                                        gone to "react".
+                                        My passion is in the front-end development. From a simple website to a full
+                                        webapp or mobile app. Besides being a developer i also own a medium-large IT
+                                        Company.
+                                        My best skill would be communication. Contact with customers is one of my
+                                        favorite things to do.
                                     </p>
                                 </div>
                             </div>
@@ -84,31 +125,85 @@ export default function Home() {
                         <div className={`col-md-6 `}>
                             <div className={'py-5'}>
                                 <h2>My Projects</h2>
-                                <p className={'fw-lighter'}>Lorazepam may increase the risk of serious or life</p>
-                                <button type="button" className="btn btn-primary text-white"><i
-                                    className="bi bi-collection me-2"></i> All projects
-                                </button>
+                                <p className={'fw-lighter'}>A small selection out of my portfolio 😉</p>
+                                {/*<button type="button" className="btn btn-primary text-white"><i*/}
+                                {/*    className="bi bi-collection me-2"></i> All projects*/}
+                                {/*</button>*/}
                             </div>
                             <div className={`${styles.project}`}>
                                 <div className='p-4'>
-                                    <img style={{borderRadius: 15}} src="/images/placeholder.png"
+                                    <img style={{borderRadius: 15}} src="/images/verbleif_cms.png"
                                          alt="Vercel Logo"
                                          width={'100%'}/></div>
+                                <div className={`${styles.overlay} overlayer`}>
+                                    <div className={`${styles.innerOverlay}`}>
+                                        <div className={`row h-100 align-content-center`}>
+                                            <div className={`col-12 text-center`}>
+                                                <h2>Verbleif CMS</h2>
+                                                <p className={`fw-lighter`}>A CMS system for the backend of a SAAS app to manage clients.</p>
+                                               <div style={{fontSize:14}}> <div className={'fw-bolder'}>Made with:</div>
+                                                   <div className={'fw-light'} style={{opacity:0.8}}>React, Redux, i18n, TypeScript and connected to Symonfy + API Platform</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`${styles.project} mt-4`}>
+                                <div className='p-4'>
+                                    <img style={{borderRadius: 15}} src="/images/kalfsupport_app.png"
+                                         alt="Vercel Logo"
+                                         width={'100%'}/></div>
+                                <div className={`${styles.overlay} overlayer`}>
+                                    <div className={`${styles.innerOverlay}`}>
+                                        <div className={`row h-100 align-content-center`}>
+                                            <div className={`col-12 text-center`}>
+                                                <h2>Kalfsupport Mobile App</h2>
+                                                <p className={`fw-lighter`}>A mobile app (B2B) for kalfsupport. Customers can place orders here and see info about the company.</p>
+                                                <div style={{fontSize:14}}> <div className={'fw-bolder'}>Made with:</div>
+                                                    <div className={'fw-light'} style={{opacity:0.8}}>React-Native, Redux, i18n and connected a Wordpress Woocommerce Api + a custom Symfony API</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className={`col-md-6 `}>
                             <div className={`${styles.project}`}>
-                                <div className='p-4'>
-                                    <img style={{borderRadius: 15}} src="/images/placeholder.png"
+                                <div className={`${styles.innerProject} p-4`}>
+                                    <img style={{borderRadius: 15}} src="/images/soundspanel_cms.png"
                                          alt="Vercel Logo"
                                          width={'100%'}/></div>
+                                <div className={`${styles.overlay} overlayer`}>
+                                    <div className={`${styles.innerOverlay}`}>
+                                        <div className={`row h-100 align-content-center`}>
+                                            <div className={`col-12 text-center`}>
+                                                <h2>Soundspanel Backend</h2>
+                                                <p className={`fw-lighter`}>A backend made for Soundpanel. Here you can manage soundsboard apps in the Playstore</p>
+                                                <div style={{fontSize:14}}> <div className={'fw-bolder'}>Made with:</div>
+                                                    <div className={'fw-light'} style={{opacity:0.8}}>React, Redux, i18n, TypeScript and connected to Symonfy + API Platform and firebase.</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className={`${styles.project} mt-4`}>
                                 <div className='p-4'>
-                                    <img style={{borderRadius: 15}} src="/images/placeholder.png"
+                                    <img style={{borderRadius: 15}} src="/images/proficrm_cms.png"
                                          alt="Vercel Logo"
                                          width={'100%'}/></div>
+                                <div className={`${styles.overlay} overlayer`}>
+                                    <div className={`${styles.innerOverlay}`}>
+                                        <div className={`row h-100 align-content-center`}>
+                                            <div className={`col-12 text-center`}>
+                                                <h2>Profi-CRM</h2>
+                                                <p className={`fw-lighter`}>A CRM webapp made to manage clients and tasks.</p>
+                                                <div style={{fontSize:14}}> <div className={'fw-bolder'}>Made with:</div>
+                                                    <div className={'fw-light'} style={{opacity:0.8}}>React, NextJS, Redux, i18n and connected to a Custom PHP API Backend</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -116,10 +211,10 @@ export default function Home() {
                         <h4>Find me on</h4>
                         <p className={`fw-lighter`}>Feel free to connect with me on</p>
                         <div>
-                            <a href=''>
+                            <a target={`_blank`} href='https://github.com/DionGrendelman'>
                                 <i className="bi bi-github me-2"></i>
                             </a>
-                            <a href=''>
+                            <a target={`_blank`} href='https://www.linkedin.com/in/dion-grendelman-21940489/'>
                                 <i className="bi bi-linkedin"></i>
                             </a>
                         </div>
