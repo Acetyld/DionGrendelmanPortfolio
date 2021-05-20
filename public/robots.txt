@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://diongrendelman.nl
+
+# Sitemaps
+Sitemap: https://diongrendelman.nl/sitemap.xml
