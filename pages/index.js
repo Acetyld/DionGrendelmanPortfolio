@@ -211,7 +211,7 @@ export default function Home() {
                         <h4>Find me on</h4>
                         <p className={`fw-lighter`}>Feel free to connect with me on</p>
                         <div>
-                            <a target={`_blank`} href='https://github.com/DionGrendelman'>
+                            <a target={`_blank`} href='https://github.com/Acetyld'>
                                 <i className="bi bi-github me-2"></i>
                             </a>
                             <a target={`_blank`} href='https://www.linkedin.com/in/dion-grendelman-21940489/'>
