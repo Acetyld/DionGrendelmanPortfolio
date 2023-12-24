@@ -29,12 +29,16 @@ const Header = (titleName) => {
                             </li>
                         </ul>
                         <div className="navbar-text text-center text-lg-start">
+                            <a target={`_blank`} href='https://twitter.com/AcetyldNL'>
+                                <i className="bi bi-twitter me-2"></i>
+                            </a>
                             <a target={`_blank`} href='https://github.com/DionGrendelman'>
                                 <i className="bi bi-github me-2"></i>
                             </a>
-                        <a target={`_blank`} href='https://www.linkedin.com/in/dion-grendelman-21940489/?originalSubdomain=nl'>
+                            <a target={`_blank`}
+                               href='https://www.linkedin.com/in/dion-grendelman-21940489/?originalSubdomain=nl'>
                                 <i className="bi bi-linkedin"></i>
-                        </a>
+                            </a>
                         </div>
                     </div>
                 </div>
