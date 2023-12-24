@@ -177,7 +177,7 @@ export default function Home() {
                                                 <h2>Soundspanel Backend</h2>
                                                 <p className={`fw-lighter`}>A backend made for Soundpanel. Here you can manage soundsboard apps in the Playstore</p>
                                                 <div style={{fontSize:14}}> <div className={'fw-bolder'}>Made with:</div>
-                                                    <div className={'fw-light'} style={{opacity:0.8}}>React, Redux, i18n, TypeScript and connected to Symonfy + API Platform and firebase.</div></div>
+                                                    <div className={'fw-light'} style={{opacity:0.8}}>React, Redux, i18n, TypeScript and connected to Symfony + API Platform and firebase.</div></div>
                                             </div>
                                         </div>
                                     </div>
