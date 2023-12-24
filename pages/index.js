@@ -18,7 +18,7 @@ export default function Home() {
                     url: 'https://www.diongrendelman.nl/',
                     title: 'Dion Grendelman - Fullstack JS Developer',
                     description: `My name is Dion Grendelman. I am a Full Stack JS developer in the netherlands focused on Vue/React/Node. But on a daily base i also work on different PHP Project, The past 3 years i've worked with react to build the backend CMS for multiple
-                    SAAS apps. I've worked with Typescript, NuxtJs NextJS, Redux, Electron and many other libraries.`,
+                    SAAS apps. I've worked with Typescript, NuxtJs NextJS, Redux, Electron and many other libraries`,
                     images: [
                         {url: 'https://www.diongrendelman.nl/images/BannerImage.svg', alt: 'Dion Grendelman Banner'},
                     ],
